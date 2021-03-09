@@ -70,14 +70,15 @@ body{
 }
 
 .footer{
-	background: #f2f2f;
-	padding: 4rem 0;
+	background: #333;
+	color: white;
+	padding: 2rem 0;
 	text-align: center;
-	margin-top: 6rem;
+	margin-top: 4rem;
 }
 
 .main {
-	padding-top: 10rem;
+	padding-top: 0;
 }
 
 
@@ -95,7 +96,7 @@ body{
 	margin-top: 1rem;
 }
 
-.navigation ul{
+	.navigation ul{
 	display: none;
 	}
 	
@@ -127,6 +128,7 @@ body{
 }
 
 h1{
+	text-align: center;
     font-size: 3.8rem;
 }
 
@@ -159,7 +161,7 @@ h4{
 
 /*Header*/
 .site-header.inicio{
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/Principal.jpg);
     background-position: center center;
     background-size: cover;
     height: 100vh;
@@ -174,6 +176,7 @@ h4{
 }
 
 .contenido-header h1{
+	font-family: Sans-serif;
     color: white;
     padding-bottom: 2rem;
     max-width: 60rem;
