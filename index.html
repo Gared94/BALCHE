@@ -3,79 +3,72 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Balche</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
 
-	<header class="header">
-		<div class= "container logo-nav-conteiner">
-			<a href="#" class="logo">BALCHE</a>
-			<span class="menu-icon">Ver menú</span>
-			<nav class="navigation">
-				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="anuncios.html">Anuncios</a></li>
-					<li><a href="blogs.html">Blogs</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-					<li><a href="nosotros.html">Nosotros</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	
-	
-	<main class="main">
-	
-	<header class="site-header inicio">
+    <header class="site-header ">
         <div class="contenedor contenido-header">
+            <a href="#" class="logo">BALCHE</a>
+            <span class="menu-icon">Ver menú</span>
             
-                </br>
-               
-            
-            <h1>EL EVENTO DE TUS SUEÑOS EN NUESTRA SALA DE TÉ</h1>
+
+            <nav  class="navegacion">
+                <ul>
+                    <li><a href="nosotros.html">Inicio</a></li>
+                    <li><a href="anuncios.html">Menú</a></li>
+                    <li><a href="blog.html">Eventos</a></li>
+                    <li><a href="blog.html">Cotizaciones</a></li>
+                    <li><a href="contacto.html">Acerca de nosotros</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-	
-  
- 
+    <div class="img-header inicio">
+        <div class="contenedor header-principal">
+
+            </br>
+            <h1>EL EVENTO DE TUS SUEÑOS EN NUESTRA SALA DE TÉ</h1>
+        </div>
+    </div>
     <section class="contenedor seccion">
 
-            <h2 class="fw-300 centrar-texto">Recepciones</h2>
-            <div class="iconos-nosotros">
-                <div class="icono">
-                    <img src="img/mantenimiento.jpg" alt="Icono Seguridad">
-                    <h3>Bodas</h3>
-                    <p> Corporis numquam doloremque atque soluta? Alias rerum minus perspiciatis consectetur aliquid
-                        voluptatem
-                        aliquam
-                        enim, doloremque maiores, magnam commodi, blanditiis perferendis quas necessitatibus?</p>
-                </div>
-    
-                <div class="icono">
-                    <img src="img/mantenimiento.jpg" alt="Icono Mejor Precio">
-                    <h3>Quinceaños</h3>
-                    <p> Corporis numquam doloremque atque soluta? Alias rerum minus perspiciatis consectetur aliquid
-                        voluptatem
-                        aliquam
-                        enim, doloremque maiores, magnam commodi, blanditiis perferendis quas necessitatibus?</p>
-                </div>
-    
-                <div class="icono">
-                    <img src="img/mantenimiento.jpg" alt="Icono a Tiempo">
-                    <h3>Cumpleaños</h3>
-                    <p> Corporis numquam doloremque atque soluta? Alias rerum minus perspiciatis consectetur aliquid
-                        voluptatem
-                        aliquam
-                        enim, doloremque maiores, magnam commodi, blanditiis perferendis quas necessitatibus?</p>
-                </div>
+        <h2 class="fw-300 centrar-texto">Recepciones</h2>
+        <div class="iconos-nosotros">
+            <div class="icono">
+                <img src="img/mantenimiento.jpg" alt="Icono Seguridad">
+                <h3>Bodas</h3>
+                <p> Corporis numquam doloremque atque soluta? Alias rerum minus perspiciatis consectetur aliquid
+                    voluptatem
+                    aliquam
+                    enim, doloremque maiores, magnam commodi, blanditiis perferendis quas necessitatibus?</p>
             </div>
+
+            <div class="icono">
+                <img src="img/mantenimiento.jpg" alt="Icono Mejor Precio">
+                <h3>Quinceaños</h3>
+                <p> Corporis numquam doloremque atque soluta? Alias rerum minus perspiciatis consectetur aliquid
+                    voluptatem
+                    aliquam
+                    enim, doloremque maiores, magnam commodi, blanditiis perferendis quas necessitatibus?</p>
+            </div>
+
+            <div class="icono">
+                <img src="img/mantenimiento.jpg" alt="Icono a Tiempo">
+                <h3>Cumpleaños</h3>
+                <p> Corporis numquam doloremque atque soluta? Alias rerum minus perspiciatis consectetur aliquid
+                    voluptatem
+                    aliquam
+                    enim, doloremque maiores, magnam commodi, blanditiis perferendis quas necessitatibus?</p>
+            </div>
+        </div>
 
         <h2 class="fw-300 centrar-texto">Eventos Empresariales</h2>
         <div class="iconos-nosotros">
@@ -107,51 +100,84 @@
             </div>
         </div>
     </section>
-	</main>
-	
-	 <section class="contenedor seccion contenido-centrado">
+
+    <section class="contenedor seccion contenido-centrado">
         <h2 class="fw-300 centrar-texto">Llena el formulario de Contacto</h2>
 
-        <form class="contacto" action="">
+        <form class="contacto" method="POST" action="Send.php">
             <fieldset>
                 <legend>Información Personal</legend>
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" placeholder="Tu Nombre">
+                <input type="text" name="nombre" placeholder="Tu Nombre">
 
                 <label for="email">E-mail: </label>
-                <input type="email" id="email" placeholder="Tu Correo electrónico" required>
+                <input type="email" name="email" placeholder="Tu Correo electrónico" >
 
                 <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
+                <input type="tel" name="telefono" placeholder="Tu Teléfono" >
 
                 <label for="mensaje">Mensaje: </label>
-                <textarea  id="mensaje"></textarea>
+                <textarea name="mensaje"></textarea>
 
             </fieldset>
-                
-            <input type="submit" value="Enviar" class="boton boton-verde">
+
+            <input type="submit" name="enviar" value="Enviar" class="boton boton-verde">
 
         </form>
     </section>
-	
-	
-	
-    
-    <footer class="footer">
-	
-	
-	<h2>Acerca de nosotros</h2>
 
-	<p>Sala de Té y Recepciones Bálche</p>
 
-	<p>Boulevard Universitario #2032, Colonia El Roble, San Salvador</p>
 
-	<p>2226-2936 / 2235-2567</p>
-       <p>R&E Data Solutions</p>
-	   <hr>
-        <p>Todos los Derechos Reservados 2021 &copy; | R&E Data Solutions</p>
+
+    <footer class="site-footer seccion centrar-texto">
+		<div class="container-footer-all">
+		<div class="container-body">
+			<div class="column1">
+				<h1>Sala de té Balche</h1>
+				<p>Corporis numquam doloremque 
+				atque soluta? Alias rerum minus 
+				perspiciatis aliquam enim, doloremque 
+				maiores, magnam commodi, blanditiis 
+				perferendis quas necessitatibus?</p>
+			</div>
+			<div class="column2">
+				<h1>Redes Sociales</h1>
+				<div class="row">
+					<img src="img/FB.ico">
+					<label>Siguenos en Facebook</label>
+				</div>
+				<div class="row">
+					<img src="img/IG.ico">
+					<label>Siguenos en Instagram</label>
+				</div>
+			</div>
+			<div class="column3">
+				<h1>Información de contacto</h1>
+				<div class="row2">
+					<img src="img/direccion.ico">
+					<label>Boulevard Universitario #2032, 
+						   Col. El Roble, S.S.</label>
+				</div>
+				<div class="row2">
+					<img src="img/telefono.ico">
+					<label>2226-2936 / 2235-2567</label>
+				</div>
+				<div class="row2">
+					<img src="img/correo.ico">
+					<label>recepcionesbalche@gmail.com</label>
+				</div>
+			</div>
+		</div>
+		
+		</div>
+		<div class="container-footer">
+			<div class="copyright">
+				Todos los Derechos Reservados 2021 &copy; | <a href="">R&E Data Solutions</a>
+			</div>
+			
+		</div>
     </footer>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
